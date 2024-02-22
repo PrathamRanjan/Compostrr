@@ -1,7 +1,16 @@
 import streamlit as st
 from streamlit_player import st_player
 import pandas as pd
+import subprocess
+import sys
 
+def install_packages():
+    packages = ["streamlit", "pandas", "streamlit-player"]
+    for package in packages:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# Call this function early in your script
+install_packages()
 # Correctly setting the page config as the first command
 st.set_page_config(page_title="Composter", layout="wide")
 
