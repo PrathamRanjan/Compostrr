@@ -34,7 +34,7 @@ load_css()  # Apply the CSS for styling
 
 # Following Streamlit commands to set up your app
 st.title("Compostrr")
-st.write("Good Morning Amanda, your Compostrr is at 51% complete.")
+st.write("Good Morning Amanda, your Compostrr is 51% complete.")
 
 # Section 1: Composting Courses and Content
 st.header("Composting Courses and Content")
